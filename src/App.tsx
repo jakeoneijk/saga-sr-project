@@ -37,8 +37,8 @@ function App() {
       <div style={{ margin: 'auto' }}>
         <img style={{ width: '400px', padding: '40px' }} src={fig} />
       </div>
-      <AudioTable audioType='Music' />
       <AudioTable audioType='Sound Effect' />
+      <AudioTable audioType='Music' />
       <AudioTable audioType='Speech' />
       <Section
         name='References'

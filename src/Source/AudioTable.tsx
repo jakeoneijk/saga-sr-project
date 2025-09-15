@@ -50,11 +50,7 @@ function checkGroup(urls: string[]): boolean {
     return false;
   }
 
-  return urls.every((url, i) => {
-    const name = url.split("/").pop() ?? "";
-    const base = name.replace(/\.[^/.]+$/, ""); // remove extension
-    return base.endsWith(EXPECTED_SUFFIXES[i]);
-  });
+  return urls.every((url, i) => url.includes(EXPECTED_SUFFIXES[i]));
 }
 
 export default function AudioTable({ audioType }: Props) {
