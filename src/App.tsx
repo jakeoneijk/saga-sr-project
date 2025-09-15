@@ -5,7 +5,7 @@ import fig from './Source/image/Fig1.png'
 
 import Title from './Component/Title'
 import Speech from './Source/Speech'
-import Music from './Source/Music'
+import AudioTable from './Source/AudioTable'
 import Soundeffect from './Source/SoundEffect'
 import Section from './Component/Section'
 
@@ -37,11 +37,12 @@ function App() {
       */}
       <Section name='Abstract' content={paperContent.abstract} />
       <div style={{ margin: 'auto' }}>
-        <img style={{ width: '1000px', padding: '40px' }} src={fig} />
+        <img style={{ width: '400px', padding: '40px' }} src={fig} />
       </div>
-      <Speech />
-      <Music />
-      <Soundeffect />
+      <AudioTable/>
+      {/*<Speech />*/}
+      {/*<Music />*/}
+      {/*<Soundeffect />*/}
       <Section
         name='References'
         content={paperContent.reference

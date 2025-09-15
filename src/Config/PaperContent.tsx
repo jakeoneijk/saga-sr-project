@@ -1,18 +1,19 @@
 export const paperContent = {
   title:
-    'FlashSR: One-step Versatile Audio Super-resolution via Diffusion Distillation',
-  paperInfo:
-    'Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025',
+    'SAGA-SR: Semantically and Acoustically Guided Audio Super-Resolution',
+  paperInfo: '',
+    //'Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025',
   author: 'Jaekwon Im, Juhan Nam',
   affiliation:
     'Graduate School of Culture Technology, KAIST, Republic of Korea',
   abstract:
-    'Versatile audio super-resolution (SR) is the challenging task of restoring high-frequency components from low-resolution audio with sampling rates between 4kHz and 32kHz in various domains such as music, speech, and sound effects. Previous diffusion-based SR methods suffer from slow inference due to the need for a large number of sampling steps. In this paper, we introduce FlashSR, a single-step diffusion model for versatile audio super-resolution aimed at producing 48kHz audio. FlashSR achieves fast inference by utilizing diffusion distillation with three objectives: distillation loss, adversarial loss, and distribution-matching distillation loss. We further enhance performance by proposing the SR Vocoder, which is specifically designed for SR models operating on mel-spectrograms. FlashSR demonstrates competitive performance with the current state-of-the-art model in both objective and subjective evaluations while being approximately 22 times faster.',
+    'Versatile audio super-resolution (SR) aims to predict high-frequency components from low-resolution audio across diverse domains such as speech, music, and sound effects. Existing diffusion-based SR methods often fail to produce semantically aligned outputs and struggle with consistent high-frequency reconstruction. In this paper, we propose SAGA-SR, a versatile audio SR model that combines semantic and acoustic guidance. Based on a DiT backbone trained with a flow matching objective, SAGA-SR is conditioned on text and spectral roll-off embeddings. Due to the effective guidance provided by its conditioning, SAGA-SR robustly upsamples audio from arbitrary input sampling rates between 4 kHz and 32 kHz to 44.1 kHz. Both objective and subjective evaluations show that SAGA-SR achieves state-of-the-art performance across all test cases.',
   reference: [
-    'H. Liu, W. Choi, X. Liu, Q. Kong, Q. Tian, and D. Wang, “Neural vocoder is all you need for speech superresolution,” in INTERSPEECH, p. 4227–4231, 2022',
     'H. Liu, K. Chen, Q. Tian, W. Wang, and M. D. Plumbley, “Audiosr: Versatile audio super-resolution at scale,” in ICASSP, pp. 1076–1080, IEEE, 2024.',
+    'J. Im and J. Nam, “Flashsr: One-step versatile audio super-resolution via diffusion distillation,” in ICASSP. IEEE, 2025, pp. 1–5',
+    
   ],
   contactLink: 'https://jakeoneijk.github.io/',
-  paperLink: 'https://arxiv.org/abs/2501.10807',
-  codeLink: 'https://github.com/jakeoneijk/FlashSR_Inference',
+  paperLink: '',
+  codeLink: ''
 }
