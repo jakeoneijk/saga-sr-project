@@ -10,6 +10,10 @@ type SampleBucket = {
   spec: Partial<Record<MethodKey, string>>
 }
 
+type Props = {
+  audioType: 'Speech' | 'Music' | 'Sound Effect'
+}
+
 const theadMetaArray: TheadMetaType[] = [
   { name: '8 kHz (Input)', miniTopDescription: '', description: '', color: '#4D97EF' },
   { name: 'NVSR-ResUNet [1]', miniTopDescription: '', description: '', color: '#C00909' },
@@ -66,10 +70,10 @@ for (const idx of sortedIdx) {
   tableAudio.push(audioRow, specRow)
 }
 
-export default function Music() {
+export default function AudioTable({ audioType }: Props) {
   return (
     <AudioSpecTable
-      tableName="Music (8 kHz to 48 kHz)"
+      tableName={`${audioType} (8 kHz to 44.1 kHz)`}
       theadMetaArray={theadMetaArray}
       tableAudio={tableAudio}
       audioWidth="180px"

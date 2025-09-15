@@ -4,9 +4,7 @@ import { paperContent } from './Config/PaperContent'
 import fig from './Source/image/Fig1.png'
 
 import Title from './Component/Title'
-import Speech from './Source/Speech'
 import AudioTable from './Source/AudioTable'
-import Soundeffect from './Source/SoundEffect'
 import Section from './Component/Section'
 
 const style = {
@@ -39,10 +37,7 @@ function App() {
       <div style={{ margin: 'auto' }}>
         <img style={{ width: '400px', padding: '40px' }} src={fig} />
       </div>
-      <AudioTable/>
-      {/*<Speech />*/}
-      {/*<Music />*/}
-      {/*<Soundeffect />*/}
+      <AudioTable audioType='Speech' />
       <Section
         name='References'
         content={paperContent.reference
