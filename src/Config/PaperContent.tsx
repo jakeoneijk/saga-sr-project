@@ -14,6 +14,6 @@ export const paperContent = {
     
   ],
   contactLink: 'https://jakeoneijk.github.io/',
-  paperLink: '',
+  paperLink: 'https://arxiv.org/abs/2509.24924',
   codeLink: ''
 }
