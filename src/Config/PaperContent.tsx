@@ -1,8 +1,8 @@
 export const paperContent = {
   title:
     'SAGA-SR: Semantically and Acoustically Guided Audio Super-Resolution',
-  paperInfo: '',
-    //'Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025',
+  paperInfo: 
+    'Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026',
   author: 'Jaekwon Im, Juhan Nam',
   affiliation:
     'Graduate School of Culture Technology, KAIST, Republic of Korea',
