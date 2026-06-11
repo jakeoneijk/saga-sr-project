@@ -15,5 +15,5 @@ export const paperContent = {
   ],
   contactLink: 'https://jakeoneijk.github.io/',
   paperLink: 'https://arxiv.org/abs/2509.24924',
-  codeLink: ''
+  codeLink: 'https://github.com/jakeoneijk/SAGA-SR'
 }
